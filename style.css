@@ -1,0 +1,509 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: all .3s linear;
+}
+
+html{
+    font-size: 62.5%;
+    overflow: scroll;
+    scroll-behavior: smooth;
+    scroll-padding-top: 7rem;
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: red;
+}
+
+/* header */
+
+section{
+    padding: 3rem 9%;
+}
+
+.heading{
+    text-align: center;
+    color: black;
+    margin-bottom: 3rem;
+    font-size: 3rem;
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0 0.5rem 1rem rgb(183, 175, 175);
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 9%;
+}
+
+.header .logo {
+    height: 6rem;
+    width: 5rem;
+}
+
+.header .navbar a{
+    margin: 0 1.5rem;
+    font-size: 1.7rem;
+    color: black;
+}
+
+.header .navbar a:hover{
+    color: red;
+}
+
+.section{
+    padding: 3rem 2rem;
+}
+
+.header .icons div,
+.header .icons a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.5rem;
+    border-radius: .5rem;
+    background: white;
+    font-size: 1.7rem;
+    color: black;
+    margin-left: .3rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.header .icons a:hover,
+.header .icons div:hover{
+    background: red;
+    color: white;
+}
+
+.header #menu-btn{
+    display: none;
+}
+
+/* Home */
+
+.background-image{
+    background: url(images/IMG-20230607-WA0063.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 6%;
+    position: relative;
+}
+
+.background-content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    transform: translate(-80%);
+}
+
+.background-content h1{
+    color: black;
+    font-size: 50px;
+    margin-bottom: 10px;
+    font-weight: 2000;
+    font-style: italic;
+    font-family: sans-serif;
+}
+
+.background-content p {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: red;
+    font-weight: 1000;
+}
+
+.background-content a{
+    background-color: white; 
+    padding: 1.5rem 3rem;
+    color: black;
+    font-size: 1.5rem;
+    box-shadow: 0 0.5rem 1rem black;
+}
+
+.background-content a:hover{
+    background: transparent;
+    border: 1px solid red;
+    color: black;
+}
+
+/* about */
+
+.about{
+    padding: 5rem 7%;
+    background: white;
+    margin-top: 40px;
+}
+
+.main-about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.inner-about{
+    flex: 1 1 45rem;
+}
+
+.inner-about .inner-about-image img{
+    width: 100%;
+}
+
+.about-content{
+    width: 80%;
+}
+
+.about-content h2{
+    font-size: 35px;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.about-content p{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.about-content a{
+    background:red;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    color: white;
+    transition: .5s;
+    box-shadow: 0 0.5rem 1rem rgb(131, 69, 69);
+}
+
+.about-content a:hover{
+    background: transparent;
+    border: 1px solid red;
+    color: black;
+}
+
+/* shop */
+
+.shop-btn{
+    background:red;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    color:white;
+    transition: .5s;
+    box-shadow: 0 0.5rem 1rem rgb(131, 69, 69);
+}
+
+.shop-btn:hover{
+    background: transparent;
+    border: 1px solid red;
+    color: black;
+}
+
+.price{
+    color: red;
+    margin-bottom: 15px;
+    font-weight: 1000;
+    font-size: 2rem;
+}
+
+.shop{
+    color:rgb(12, 12, 12);
+    margin-top: 20px;
+}
+
+.shop h2{
+     font-size: 6rem;
+     text-align: center;
+     margin-bottom: 7px;
+     font-style: italic;
+}
+ 
+.shop .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+    gap: 2rem;
+}
+
+.shop .box-container .box {
+    text-align: center;
+    background: white;
+    border: 0.2rem solid black;
+    box-shadow: 0 0.5rem 1rem black;
+}
+
+.shop .box-container .box:hover .img img{
+    transform:scale(1.1);
+}
+
+.shop .box-container .box:hover .img .shop-icons{
+    transform: translateX(0rem);
+}
+
+.shop .box-container .box .img{
+    position: relative;
+    overflow: hidden;
+}
+
+.shop .box-container .box .img img{
+    height: 25rem;
+}
+
+ .shop.shop .box-container .box .shop-icons{
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    transform: translateX(-10rem);
+}
+
+.shop.shop .box-container .box .shop-icons a{
+    display: block;
+    height: 5rem;
+    width: 5rem;
+    line-height: 4.5rem;
+    font-size: 1.7rem;
+    color: black;
+    border-radius: 0.2rem solid black;
+    box-shadow: 0 0.5rem 1rem black;
+    margin-top: 1rem;
+}
+
+.shop.shop .box-container .box .shop-icons a:hover{
+    color: white;
+    background: red;
+}
+
+.shop.shop .box-container .box .content{
+    padding: 2rem;
+}
+
+.shop.shop .box-container .box .content h3{
+    font-size: 2rem;
+    color: black;
+    padding-bottom: .5rem;
+    font-weight: normal;
+}
+
+.shop.shop .box-container .box .content a{
+    font-weight: 800;
+}
+
+/* message */
+
+.message{
+    padding: 25px;
+    background-image: url(images/IMG-20230607-WA0065.jpg) ;
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.message .content{
+    max-width: 40rem;
+    background:white;
+    box-shadow: 0 0.5rem 1rem black;
+    padding: 4rem;
+    text-align: center;
+    margin: 10rem 0;
+    margin-left: 10rem;
+}
+
+
+.message-btn{
+    background:red;
+    padding: 1rem 3rem;
+    font-size: 1.5rem;
+    color:white;
+    transition: .5s;
+    box-shadow: 0 0.5rem 1rem rgb(131, 69, 69);
+}
+
+.message-btn:hover{
+    background: transparent;
+    border: 1px solid red;
+    color: black;
+}
+
+.message .content p{
+    margin-bottom: 25px;
+}
+
+.message .content h3{
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.message .content span{
+    font-weight: 500;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: brown;
+}
+
+/* gallery */
+
+.gallery{padding: 4rem 7%;
+         margin-top: 20px;
+}
+
+.gallery h2{color: black;
+            font-size: 60px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-style: italic;
+}
+
+.maingallery{display: flex;
+             justify-content: center;
+             align-items: center;
+             gap: 10px;
+             flex-wrap: wrap;
+}
+
+.innergallery{flex: 1 1 300px;
+}
+
+.innergallery img{width: 100%;
+}
+
+/* contact */
+
+.contact-left p{margin-top: 30px;
+    font-size: 20px;
+}
+
+.contact-left p i {color: red;
+       margin-right: 15px;
+       font-size: 20px;
+}
+
+.social-icons{margin-top: 30px;
+}
+
+.social-icons a {text-decoration: none;
+     font-size: 30px;
+     margin-right: 15px;
+     color:  red;
+     display: inline-block;
+     transition: transform 0.5s;
+}
+
+.social-icons a :hover{color: red;
+           transform: translateY(-5px);
+}
+
+.contact-left h2{margin-top: 10px;  
+    color: black; 
+    font-style: italic;  
+    font-size: 35px;          
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px){
+       html{
+        font-size: 55%
+      }
+
+      .header{
+        padding:1.5rem 2rem;
+      }
+}
+
+@media(max-width:768px){
+   .header #menu-btn{
+    display: inline-block;
+   }
+
+   .header .navbar{
+    position: absolute;
+    top: 99%;
+    left: 0;
+    right: 0;  
+    background: white;
+    border-top: 0.2rem solid black;
+    border-bottom: 0.2rem solid black;
+    padding: 0.2rem;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+   }
+
+   .header .navbar.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+   }
+
+
+   .header .navbar a{
+    display: block;
+    font-size: 2rem;
+    margin: 3rem 4rem;
+   }
+}
+
+@media(max-width:450px){
+    html{
+        font-size: 50%;
+    }
+}
