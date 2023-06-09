@@ -101,7 +101,7 @@ section{
 
 /* Home */
 
-#background-image{
+.background-image{
     background: url(images/IMG-20230607-WA0063.jpg);
     width: 100%;
     height: 100vh;
@@ -151,7 +151,7 @@ section{
 
 /* about */
 
-#about{
+.about{
     padding: 5rem 7%;
     background: white;
     margin-top: 40px;
@@ -227,56 +227,56 @@ section{
     font-size: 2rem;
 }
 
-#shop{
+.shop{
     color:rgb(12, 12, 12);
     margin-top: 20px;
 }
 
-#shop h2{
+.shop h2{
      font-size: 6rem;
      text-align: center;
      margin-bottom: 7px;
      font-style: italic;
 }
  
-#shop .box-container{
+.shop .box-container{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
     gap: 2rem;
 }
 
-#shop .box-container .box {
+.shop .box-container .box {
     text-align: center;
     background: white;
     border: 0.2rem solid black;
     box-shadow: 0 0.5rem 1rem black;
 }
 
-#shop .box-container .box:hover .img img{
+.shop .box-container .box:hover .img img{
     transform:scale(1.1);
 }
 
-#shop .box-container .box:hover .img .shop-icons{
+.shop .box-container .box:hover .img .shop-icons{
     transform: translateX(0rem);
 }
 
-#shop .box-container .box .img{
+.shop .box-container .box .img{
     position: relative;
     overflow: hidden;
 }
 
-#shop .box-container .box .img img{
+.shop .box-container .box .img img{
     height: 25rem;
 }
 
- #shop.shop .box-container .box .shop-icons{
+ .shop.shop .box-container .box .shop-icons{
     position: absolute;
     top: 1rem;
     left: 2rem;
     transform: translateX(-10rem);
 }
 
-#shop.shop .box-container .box .shop-icons a{
+.shop.shop .box-container .box .shop-icons a{
     display: block;
     height: 5rem;
     width: 5rem;
@@ -288,23 +288,23 @@ section{
     margin-top: 1rem;
 }
 
-#shop.shop .box-container .box .shop-icons a:hover{
+.shop.shop .box-container .box .shop-icons a:hover{
     color: white;
     background: red;
 }
 
-#shop.shop .box-container .box .content{
+.shop.shop .box-container .box .content{
     padding: 2rem;
 }
 
-#shop.shop .box-container .box .content h3{
+.shop.shop .box-container .box .content h3{
     font-size: 2rem;
     color: black;
     padding-bottom: .5rem;
     font-weight: normal;
 }
 
-#shop.shop .box-container .box .content a{
+.shop.shop .box-container .box .content a{
     font-weight: 800;
 }
 
@@ -361,11 +361,11 @@ section{
 
 /* gallery */
 
-#gallery{padding: 4rem 7%;
+.gallery{padding: 4rem 7%;
          margin-top: 20px;
 }
 
-#gallery h2{color: black;
+.gallery h2{color: black;
             font-size: 60px;
             text-align: center;
             margin-bottom: 20px;
